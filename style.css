@@ -60,12 +60,13 @@ html {
     background-color: #035B6C;
     width: 200px;
     padding: 10px 20px;
-    box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1);
     transition: all .35s ease;
 }
 
 .cabecalho-menu-item-conosco:hover {
-    background-color: #327baf;
+    background-color: #2e778d;
+    box-shadow: 3px 0px 4px rgba(255, 255, 255, 0.1);
     transition: 0.3s ease 0s;
 }
 
@@ -219,12 +220,13 @@ html {
 .contato {
     width: 100%;
     max-width: 500px;
+    margin: 5% 0px;
 }
 
 .formu {
     display: flex;
     justify-content: center;
-    padding: 20% 0px 0px;
+    padding: 5% 0px;
 }
 
 .form {
@@ -235,13 +237,17 @@ html {
 .field {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #DDD;
-    border-radius: 5px;
+    border: none;
+    /*1px solid #DDD; */
+    border-radius: 8px;
     font-family: 'Montserrat', sans-serif 16px;
 }
 
-.textearea {
+textarea {
     height: 150px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif 16px;
 }
 
 @media screen and (max-width: 1600mpx) {}
