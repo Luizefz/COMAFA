@@ -22,66 +22,99 @@
             <a class="cabecalho-menu-item" href="#section-02">Quem Somos?</a>
             <a class="cabecalho-menu-item" href="#section-03">Serviços</a>
             <a class="cabecalho-menu-item-conosco" href="#section-04">Fale conosco!</a>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#section-02" onclick="closeNav()">Quem Somos?</a>
+                <a href="#section-03" onclick="closeNav()">Serviços</a>
+                <a href="#" onclick="closeNav()">Clientes</a>
+                <a href="#section-04" onclick="closeNav()">Fale conosco!</a>
+            </div>
+
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="FOTO/Menu-Icon.png" /></span>
+            </div>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    document.getElementById("main").style.marginRight = "0px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginRight = "0";
+                }
+            </script>
+
         </nav>
     </header>
     <main class="conteudo">
 
         <section id="conteudo-principal">
 
-            <div class="conteudo-principal-escrito>">
+            <div class="conteudo-principal-escrito">
 
-                <h1 class="conteudo-principal-titulo">
-                    Serviços de Qualidade<br> e Segurança<br>Para uma maior<br> Produtividade Industrial.
+                <h1 class="conteudo-principal-titulo ">
+                    Serviços de Qualidade e<br>Segurança Para uma<br>maior Produtividade Industrial.
                 </h1>
 
                 <a href="#section-02"><img class="botao" src="botão/chevron-circle-down-solid 1.png" /></a>
 
             </div>
 
-            <img class="conteudo-principal-img" src="FOTO/banner/foto1.png" alt="...">
+            <img class="conteudo-principal-img2" src="FOTO/banner/foto1.png" alt="...">
 
         </section>
 
         <section id="section-02">
             <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-titulo2"> Quem Somos?</h1>
-                <br>
-                <h2 class="conteudo-pricipal-subtitulo"> COMAFA é uma empresa com <br>mais de 30 anos de referência<br> no atendimento de empresas
-                    <br>do setor industrial nos mais diversos segmentos.
+
+                <h1 class="conteudo-principal-titulo conteudo-principal-titulo2"> Quem Somos?</h1>
+                
+                <h2 class="conteudo-pricipal-subtitulo"> COMAFA é uma empresa com mais de 30 anos de referência
+                    no atendimento de empresas
+                    do setor industrial nos mais diversos segmentos.
                 </h2>
 
-                <h3 class="conteudo-pricipal-subtitulo2">Executamos e realizamos projetos,
+                <h3 class="conteudo-pricipal-subtitulo2"><br>Executamos e realizamos projetos,
                     <br>fornecemos mão de obra especializadas e
                     <br> realizamos prestações de serviços<br> de fabricação, montagem e manutenção industrial.
                 </h3>
 
-                <!-- <a href="#section-03"><img class="botao" src="botão/chevron-circle-down-solid 1.png"  ></a> -->
             </div>
+
             <img class="conteudo-principal-img2" src="FOTO/banner/foto2.png" alt="...">
+
         </section>
 
         <section id="section-03">
             <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-titulo2">Nossos Serviços</h1>
+                <h1 class="conteudo-principal-titulo conteudo-principal-titulo2">Nossos Serviços</h1>
                 <br>
-                <h2 class="conteudo-principal-subtitulo3">Terceirização de Mão de Obra Especializada (H/H); Planejamento e Execução de Projetos conforme as suas necessidades;<br>
+                <h2 class="conteudo-pricipal-subtitulo2">Terceirização de Mão de Obra Especializada (H/H);<br>
+                    <br>Planejamento e Execução de Projetos conforme as suas necessidades;<br>
                     <br> Fabricação de Prensa Enfardadeira, Esteira Transportadora, entre outros;<br>
-                    <br> Montagem e manutenção de tubulação, estruturas metálicas, maquinas, equipamentos, eletromecânica industrial, mezaninos, plataformas entre outros;<br>
-                    <br> Locação de Maquinas e Muito Mais! 🪐
+                    <br> Montagem e manutenção de tubulação, estruturas metálicas, maquinas, equipamentos,
+                    eletromecânica industrial, mezaninos, plataformas entre outros.
                 </h2>
+
+                <a href="" class="botao-locacao"><h2>Locação de Máquinas</h2></a>
+
             </div>
-            <img class="conteudo-principal-img3" src="FOTO/banner/foto3.png" alt="...">
+            <img class="conteudo-principal-img3" src="FOTO/banner/foto4.png" alt="...">
         </section>
 
         <section id="section-04">
 
             <div class="contato">
-                <h3 class="formu">Formulario</h3>
+                <h3 class="formu">Formulário</h3>
                 <form class="form" method="POST" action="/.email.php">
                     <input class="field" name="name" placeholder="Nome">
                     <input class="field" name="email" placeholder="Email">
                     <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui."></textarea>
-                    <input class="field cabecalho-menu-item-conosco" style="align-self: center;" type="submit" value="Enviar">
+                    <input class="field cabecalho-menu-item-conosco" style="align-self: center; display: block;" type="submit"
+                        value="Enviar">
 
                 </form>
             </div>
