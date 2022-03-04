@@ -124,10 +124,10 @@ html {
     .conteudo-principal-titulo {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 44px;
+        font-size: 250%;
         color: #FFFFFF;
         margin-top: 35vh;
-        margin-left: 13%;
+        margin-left: 10%;
     }
 
     .conteudo-principal-titulo2 {
@@ -135,7 +135,7 @@ html {
         font-weight: 700;
         font-size: 44px;
         color: #FFFFFF;
-        margin-top: 15vh;
+        margin-top: 20vh;
         margin-left: 13%;
         border-top: 3.5px solid #FFFFFF;
         width: 50px;
@@ -146,7 +146,7 @@ html {
     .conteudo-pricipal-subtitulo {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 30px;
         color: #FFFFFF;
         margin-left: 14%;
     }
@@ -154,7 +154,7 @@ html {
     .conteudo-pricipal-subtitulo2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         color: #FFFFFF;
         margin-left: 14%;
     }
@@ -177,10 +177,10 @@ html {
     .botao {
         width: 42px;
         height: 42px;
-        margin: 10vh 50%;
+        margin: 20px 45% 20%;
     }
 
-    .botao-locacao{
+    .botao-locacao {
         width: auto;
         margin: 5vh;
         font-family: 'Montserrat', sans-serif;
@@ -216,6 +216,15 @@ html {
         justify-content: space-between;
     }
 
+    #section-05 {
+        display: flex;
+        height: 100%;
+        flex-direction: row-reverse;
+        background-color: #182231;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .conteudo-principal-img3 {
         width: 80vh;
         height: 70vh;
@@ -230,7 +239,11 @@ html {
         font-size: 20px;
         color: #FFFFFF;
         margin-left: 14%;
-        gap: px;
+        gap: 0px;
+    }
+
+    .hide {
+        display: none;
     }
 
     #section-04 {
@@ -352,6 +365,7 @@ html {
     .conteudo-principal-escrito {
         flex-direction: column;
         gap: 0px;
+        margin-top: 0px;
     }
 
     .conteudo-principal-titulo {
@@ -380,8 +394,8 @@ html {
 
     .conteudo-principal-img {
         width: 100%;
-        height: 40%;
-        margin-top: 100px;
+        height: 50%;
+        margin-top: 50%;
         padding: 0px 8%;
     }
 
@@ -389,16 +403,23 @@ html {
         width: 100%;
         height: 40%;
         padding: 0px 8%;
-        margin-top: 100px;
+        margin-top: 20%;
+    }
+
+    .conteudo-principal-img3 {
+        width: 100%;
+        height: 40%;
+        padding: 0px 8%;
+        margin-top: 20%;
     }
 
     .botao {
         width: 42px;
         height: 42px;
-        margin: 10vh 45%;
+        margin: 10px 45% 20%;
     }
 
-    .botao-locacao{
+    .botao-locacao {
         width: auto;
         margin: 5vh;
         font-family: 'Montserrat', sans-serif;
@@ -425,18 +446,24 @@ html {
 
     #section-03 {
         display: flex;
-        height: 100vh;
+        height: 100%;
         flex-direction: column-reverse;
         background-color: #182231;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .conteudo-principal-img3 {
-        width: 100%;
-        height: 40%;
-        padding: 0px 8%;
-        margin-top: 100px;
+    #section-05 {
+        display: flex;
+        height: 100%;
+        flex-direction: column-reverse;
+        background-color: #182231;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hide {
+        display: block;
     }
 
     .conteudo-principal-subtitulo3 {
@@ -447,27 +474,12 @@ html {
         margin-left: 14%;
     }
 
-    #section-04 {
-        width: 100%;
-        height: 100vh;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-        color: #FFFFFF;
-        background-color: #182231;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-    }
-
     .contato {
         width: 100vh;
-    }
-
-    .formu {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding: 10% 0px;
+        align-items: center;
     }
 
     .form {
